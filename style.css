@@ -48,8 +48,9 @@ nav ul li a:hover {
     border-radius: 20px;
     background-color: #f5f5f5a4;
     font-weight: 500;
+    transition: all 0.1s ease-out;
+    font-size: 22px;
 }
-
 
 /* Class to style each section */
 .card {
@@ -74,7 +75,25 @@ nav ul li a:hover {
     & h1 {
     text-align: center; 
     color: #17202b;
-    font-size: 30px;  
+    font-size: 30px;
+    padding: 0 150px;  
+    }
+    
+    & #title-name:after{
+        background: none repeat scroll 0 0 transparent;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: relative;
+        background: #102542;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    & #title-name:hover:after{
+        width: 100%; 
+        left: 0; 
     }
 
     & div {
@@ -134,6 +153,12 @@ nav ul li a:hover {
         width: 100%;
         border-radius: 200px;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    & img:hover{
+        width: 102%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all 0.5s ease-out;
     }
 }
 

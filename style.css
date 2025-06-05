@@ -446,6 +446,7 @@ nav ul li a:hover {
         }
 
         & h2 {
+            
             margin: 0;
             font-size: 40px;
 
@@ -456,10 +457,13 @@ nav ul li a:hover {
             }
 
             & a:hover {
-                transition: all 0.1s ease-out;
-                font-size: 45px;
-                color: #e26658;
+                color: #c75344;
             }
+        }
+
+        & h2:hover{
+            transform: scale(1.03);
+            transition: transform 0.3s ease-in-out;
         }
     }
 
